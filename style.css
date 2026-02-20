@@ -1,38 +1,61 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-.clock {
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.clock, .stopwatch {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.time {
     font-size: 48px;
     font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
-.counter {
+.format {
     margin-bottom: 20px;
-    text-align: center;
+}
+
+.format input[type="radio"] {
+    display: none;
+}
+
+.format label {
+    margin-right: 10px;
+}
+
+.format label:hover {
+    cursor: pointer;
+}
+
+.stopwatch {
+    padding: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
 }
 
 button {
-    width: 100px;
-    height: 30px;
-    font-size: 16px;
-    margin: 5px;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #fff;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #ccc;
-}
-
-button:active {
-    transform: translateY(2px);
+    background-color: #3e8e41;
 }

@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple website that displays the current time and a counter that can be started, stopped, and paused.">
-    <meta name="keywords" content="clock, counter, start, stop, pause">
-    <meta name="author" content="Your Name">
-    <title>Clock and Counter</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Digital Clock & Stopwatch</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Clock and Counter</h1>
-    <div class="clock">
-        <span id="time"></span>
-    </div>
-    <div class="counter">
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-        <button id="pause">Pause</button>
-        <span id="count">0</span>
+    <div class="container">
+        <h1>Digital Clock & Stopwatch</h1>
+        <div class="clock">
+            <div class="time">
+                <span id="hours"></span>:
+                <span id="minutes"></span>:
+                <span id="seconds"></span>
+                <span id="am-pm"></span>
+            </div>
+            <div class="format">
+                <input type="radio" id="12-hour" name="format" checked>
+                <label for="12-hour">12-hour</label>
+                <input type="radio" id="24-hour" name="format">
+                <label for="24-hour">24-hour</label>
+            </div>
+        </div>
+        <div class="stopwatch">
+            <div class="time">
+                <span id="stopwatch-hours"></span>:
+                <span id="stopwatch-minutes"></span>:
+                <span id="stopwatch-seconds"></span>:
+                <span id="stopwatch-milliseconds"></span>
+            </div>
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="stop">Stop</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
